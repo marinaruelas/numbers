@@ -17,11 +17,13 @@ int main (){
   product = x * y;
   int division;
   division = x/y;
-  remainder 
+  float remainder;
+  remainder = x % y;
     cout << "The sum of your numbers is: "<< sum << endl;
     cout << "The difference of your numbers is: " << difference << endl;
     cout << "The product of your numbers is: " << product << endl;
     cout <<"The division of your numbers is: " <<  division << endl;
+    cout <<"The remainder of your numbers is: " <<  remainder << endl;
 
   return 0;
 }
