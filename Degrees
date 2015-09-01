@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main (){
+  int F;
+  cout << "What is your room temperature in Fahrenheit?" << endl;
+  cin>> F;
+  int C;
+  C=5*(F-32)/9;
+
+  if (C<100) {
+    cout << "Your room temperature in celsius is: "<< C << ". At this temperature water does not boil";
+  }
+  else {
+    cout << "Your room temperature in celsius is: "<< C << ". At this temperature water does boil" << endl;
+  }
+
+
+  return 0;
+}
