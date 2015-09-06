@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int a,b,c;
+void Sum (int a,int b){
+while (a<b){
+  a=a+1;
+  c=c+a;
+}
+}
+int main (){
+
+  cout << "Rumor says you want to calculate the sum of a range of integers." << endl;
+  cout << "First you have to give me one number ";
+  cin >> a;
+  cout << "ok, let's have another one: ";
+  cin >> b;
+  Sum (a,b);
+  cout << "The value is " << c <<endl;
+
+return 0;
+}
