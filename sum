@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 int a,b,c;
-void Sum (int a,int b){
+Sum (int a,int b){
 while (a<b){
   a=a+1;
   c=c+a;
