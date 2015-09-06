@@ -1,0 +1,27 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+
+int main (){
+  int ran,a, tries= 15;
+  cout<< "I am thinking about a number. Can you guess it?";
+  srand( time(0));
+  ran= rand()%100+1;
+while (tries>1 && ran != a)
+  {
+    cin >> a;
+    if (a > ran)
+      cout << tries << ") Sorry your number is too high, please try again: ";
+    else if (a < ran)
+      cout << tries << ") Sorry your number is too low, please try again: ";
+   tries = tries-1;
+  }
+  if (a == ran)
+    cout << "Congratulations! You guessed right, the number was: " << ran << ", and it only took you "<< tries << " tries.";
+
+  else
+    cout << "Sorry, you lost. The number was: " << ran;
+
+  return 0;
+}
