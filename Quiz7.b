@@ -5,7 +5,7 @@ using namespace std;
 
 int main (){
   string word;
-cout << "Escriba una frase"<< endl;
+cout << "Write down what you want to compare. "<< endl;
 cin >> word;
 
   if (word == string(word.rbegin(), word.rend())) {
